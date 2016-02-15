@@ -1,7 +1,7 @@
 {
   "reports": [
     {
-      "name": "yesterday",
+      "name": "users",
       "frequency": "realtime",
       "query": {
         "dimensions": ["ga:date", "ga:hour"],
@@ -10,7 +10,7 @@
         "end-date": "yesterday"
       },
       "meta": {
-        "name": "Yesterday",
+        "name": "Users",
         "description": "Yesterday visits for all sites."
       }
     },
@@ -64,13 +64,13 @@
     },
     {
       "name": "daily-page-path",
-      "frequency": "daily",
+      "frequency": "weekly",
       "query": {
-        "dimensions": ["ga:pagePath"],
+        "dimensions": ["ga:date", "ga:pagePath"],
         "metrics": ["ga:pageviews", "ga:bouncerate"],
-        "start-date": "yesterday",
+        "start-date": "2014-12-01",
         "end-date": "yesterday",
-        "max-results": "5000"
+        "max-results": "500000000"
       },
       "meta": {
         "name": "Daily page visits",
