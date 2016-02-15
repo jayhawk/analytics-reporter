@@ -64,11 +64,11 @@
     },
     {
       "name": "daily-page-paths",
-      "frequency": "weekly",
+      "frequency": "daily",
       "query": {
-        "dimensions": ["ga:date", "ga:pagePath"],
+        "dimensions": ["ga:pagePath"],
         "metrics": ["ga:pageviews", "ga:bouncerate"],
-        "start-date": "2014-12-01",
+        "start-date": "yesterday",
         "end-date": "yesterday",
         "max-results": "500000000"
       },
