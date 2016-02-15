@@ -63,7 +63,7 @@
       }
     },
     {
-      "name": "daily-page-path",
+      "name": "daily-page-paths",
       "frequency": "weekly",
       "query": {
         "dimensions": ["ga:date", "ga:pagePath"],
